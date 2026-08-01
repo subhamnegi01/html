@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #e62c3c;
+    --secondary-color: #ffccd2;
+    --text-light: #ffffff;
+    --text-dark: #222;
+}
+
+/* Body */
+body {
+    background-color: #dfe1e2;
+    color: var(--text-dark);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: var(--text-light);
+}
+
+header .Logo img {
+    width: 90px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffe2e2;
+}
+
+/* Main */
+main {
+    padding: 40px 20px;
+}
+
+/* Hero Section */
+main section:first-child {
+    background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+main section:first-child img {
+    width: 60%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+main section:first-child p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main input.sc-kOnlKp {
+    width: 60%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* About Food Delivery Section */
+main section:last-child {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+main section:last-child h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+main section:last-child p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+main section:last-child ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+main section:last-child ul li {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
